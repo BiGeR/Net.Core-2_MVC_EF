@@ -21,7 +21,7 @@ namespace MeusPedidos_Brunno
         {
             services.AddMvc();
 
-            var connection = @"Server=(localdb)\mssqllocaldb;Database=C:\Users\BiGeR777\Desktop\Testes_Develing\MeusPedidos_Brunno\MeusPedidosDB.mdf;Trusted_Connection=True;";
+            var connection = @"Server=(localdb)\mssqllocaldb;Database=MeusPedidosDB.mdf;Trusted_Connection=True;";
 
             services.AddDbContext<Context>(options => options.UseSqlServer(connection));
         }
