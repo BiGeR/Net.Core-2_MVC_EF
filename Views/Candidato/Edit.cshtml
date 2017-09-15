@@ -1,0 +1,161 @@
+﻿@model MeusPedidos_Brunno.Models.Candidato
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Alterar</h2>
+<h4>Candidato</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Html" class="control-label"></label>
+                <!--<input asp-for="Html" class="form-control" />-->
+                <span asp-validation-for="Html" class="text-danger"></span>
+                <select class="form-control" id="Html" name="Html">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Css" class="control-label"></label>
+                <!--<input asp-for="Css" class="form-control" />-->
+                <span asp-validation-for="Css" class="text-danger"></span>
+                <select class="form-control" id="Css" name="Css">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Javascript" class="control-label"></label>
+                <!--<input asp-for="Javascript" class="form-control" />-->
+                <span asp-validation-for="Javascript" class="text-danger"></span>
+                <select class="form-control" id="Javascript" name="Javascript">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Python" class="control-label"></label>
+                <!--<input asp-for="Python" class="form-control" />-->
+                <span asp-validation-for="Python" class="text-danger"></span>
+                <select class="form-control" id="Python" name="Python">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Django" class="control-label"></label>
+                <!--<input asp-for="Django" class="form-control" />-->
+                <span asp-validation-for="Django" class="text-danger"></span>
+                <select class="form-control" id="Django" name="Django">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Android" class="control-label"></label>
+                <!--<input asp-for="Android" class="form-control" />-->
+                <span asp-validation-for="Android" class="text-danger"></span>
+                <select class="form-control" id="Android" name="Android">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ios" class="control-label"></label>
+                <!--<input asp-for="Ios" class="form-control" />-->
+                <span asp-validation-for="Ios" class="text-danger"></span>
+                <select class="form-control" id="Ios" name="Ios">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Alterar" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+<div>
+    <a asp-action="Index">Lista de Candidatos</a>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

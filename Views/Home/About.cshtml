@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "About";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+<h2>Project - Meus Pedidos</h2>
+
+<p>Seu objetivo é desenvolver uma solução web para a avaliação de candidatos para a vaga de desenvolvedor.</p>
+
+<p>Seção: Dados do candidato:</p>
+    • Nome (campo obrigatório)<br />
+    • Email (campo obrigatório)<br /><br />
+
+<p>Seção: Avalie seu conhecimento de 0 a 10 nos seguintes itens:</p>
+    • HTML (campo não obrigatório)<br />
+    • CSS (campo não obrigatório)<br />
+    • Javascript (campo não obrigatório)<br />
+    • Python (campo não obrigatório)<br />
+    • Django (campo não obrigatório)<br />
+    • Desenvolvimento iOS (campo não obrigatório)<br />
+    • Desenvolvimento Android (campo não obrigatório)<br /><br />
+</p>
+
+<p> Após preencher o formulário o candidato deverá receber um email de acordo com suas resposta. </p>
+• Caso o candidato tenha entre 7 e 10 pontos para Html, CSS e Javascript deverá ser enviado o "Email Front-End";<<br />
+• Caso o candidato tenha entre 7 e 10 pontos para Python e Django deverá ser enviado o "Email Back-End”;<br />
+• Caso o candidato tenha entre 7 e 10 pontos para desenvolvimento iOS ou Android deverá ser enviado o "Email Mobile”;<br />
+• Caso ele atinja mais de um dos critérios acima deverá ser enviado um email para cada um dos critérios que ele passou;<br />
+• Caso ele não entre em nenhum dos critérios acima deverá ser enviado o “Email Genérico”.<br /><br />
+
+<p>Email Front-End:</p>
+Assunto: Obrigado por se candidatar<br />
+Conteúdo: Obrigado por se candidatar, assim que tivermos uma vaga disponível para programador Front-End entraremos em contato<br /><br />
+
+<p>Email Back-End:</p>
+Assunto: Obrigado por se candidatar<br />
+Conteúdo: Obrigado por se candidatar, assim que tivermos uma vaga disponível para programador Back-End entraremos em contato<br /><br />
+
+<p>Email Mobile:</p>
+Assunto: Obrigado por se candidatar<br />
+Conteúdo: Obrigado por se candidatar, assim que tivermos uma vaga disponível para programador Mobile entraremos em contato<br /><br />
+
+<p>Email Genérico:</p>
+Assunto: Obrigado por se candidatar<br />
+Conteúdo: Obrigado por se candidatar, assim que tivermos uma vaga disponível para programador entraremos em contato<br /><br />
+

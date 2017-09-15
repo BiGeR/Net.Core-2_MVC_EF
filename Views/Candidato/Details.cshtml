@@ -1,0 +1,70 @@
+﻿@model MeusPedidos_Brunno.Models.Candidato
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Detalhes</h2>
+<div>
+    <h4>Candidato(s)</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Html)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Html)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Css)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Css)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Javascript)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Javascript)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Python)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Python)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Django)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Django)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Android)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Android)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Ios)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Ios)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Alterar</a> |
+    <a asp-action="Index">Lista de Candidatos</a>
+</div>
